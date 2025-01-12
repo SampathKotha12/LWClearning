@@ -1,0 +1,12 @@
+:host{
+    display: block;
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 10px;
+}
+:host(.blue){
+    display: block;
+    background-color: goldenrod;
+    padding: 15px;
+    margin: 15px;
+}

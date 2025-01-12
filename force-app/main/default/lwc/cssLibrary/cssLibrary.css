@@ -1,0 +1,21 @@
+.wrapper{
+    width: 100%;
+    background-color: #add;
+}
+
+.skills{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.html{
+    width: 90%;
+    background-color: #4c4c4c;
+}
+
+.css{
+    width: 90%;
+    background-color: #f72f2f;
+}

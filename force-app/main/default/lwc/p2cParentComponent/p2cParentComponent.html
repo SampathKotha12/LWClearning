@@ -1,0 +1,29 @@
+<template>
+    <!-- simple data -->
+    <c-p2c-alert-component 
+    message="hurray ! i got the data"
+    card-heading="p2c primitive data communication.."
+    number=20
+    is-valid>
+    </c-p2c-alert-component>
+
+    <!-- complex data -->
+    <div class="slds-m-top_mediun"></div>
+    <c-p2c-carousel-component
+    carousel-details={carouselData}></c-p2c-carousel-component>
+
+    <!-- action communication -->
+    <div class="slds-m-top_medium"></div>
+    <lightning-input type="text" label="Enter percentage" onkeyup={clickHandler}></lightning-input>
+    <c-p2c-progress-component
+    progress-value={percentage}></c-p2c-progress-component>
+
+    <!-- calling child method from parent-->
+    
+    <div class="slds-m-top_medium"></div>
+    <lightning-button variant="brand" label="Brand" 
+    title="Primary action" onclick={handleClick}>
+
+    </lightning-button>
+    <c-p2c-slider-component></c-p2c-slider-component>
+</template>

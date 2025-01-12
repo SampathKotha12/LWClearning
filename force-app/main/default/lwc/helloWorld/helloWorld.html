@@ -1,0 +1,23 @@
+<template>
+    
+
+    <lightning-card  title="data bind">
+        <div>{fullName}</div>
+        <lightning-input type="text" label="Enter some text" onkeyup={changeHandler} class="slds-m-around_large"></lightning-input>
+        <div>{fullName} is a cource of {title}</div>
+    </lightning-card>
+    
+    <lightning-card  title="@track Properties">
+        <div>{fullName}</div>
+        <lightning-input type="text" label="Enter city name" onkeyup={trackHandler} class="slds-m-around_large"></lightning-input>
+        <div>{address.city} is my city</div>
+    </lightning-card>
+
+    <lightning-card  title="getters in LWC">
+        <div class="slds-m-around_large">
+            <div>first user is {firstUser}</div>
+            <div>multiply of {num1} and {num2} is {multiplyNums}</div>
+
+        </div>
+    </lightning-card>
+</template>

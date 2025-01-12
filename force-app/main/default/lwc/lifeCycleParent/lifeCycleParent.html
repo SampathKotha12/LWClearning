@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="lifecycle hook parent card">
+        <div class="slds-m-around_medium">
+            <lightning-button
+            variant="brand"
+            label="show child"
+            title="show child"
+            onclick={handleClick}
+            class="slds-m-left_x-small">
+
+            </lightning-button>
+            <template lwc:if={showChild}>
+                <c-life-cycle-child></c-life-cycle-child>
+
+            </template>
+        </div>
+    </lightning-card>
+</template>

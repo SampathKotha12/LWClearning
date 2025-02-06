@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Apex Inperative Demo">
+        <div class="slds-p-around_medium">
+            <lightning-input
+            type="search"
+            onchange={searchHandler}
+            label="Search Account"
+            value={searchKey}>
+            </lightning-input>
+            <template lwc:if={accounts}>
+                <template for:each={accounts} for:item="account">
+                <div class="slds-box slds-box_XX-small" key={account.id}> 
+                    <p><strong>Name:</strong>{Account.Name}</p>
+                    <p><strong>Type:</strong>{Account.Type}</p>
+                    <p><strong>Industry:</strong>{Account.Industry}</p>
+                </div>
+            </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

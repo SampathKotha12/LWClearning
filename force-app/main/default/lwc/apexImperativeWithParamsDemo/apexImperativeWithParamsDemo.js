@@ -3,8 +3,15 @@ import findAccounts from '@salesforce/apex/AccountController.findAccounts'
 export default class ApexImperativeWithParamsDemo extends LightningElement {
     accounts
     searchKey
+    timer
     searchHandler(event){
-        this.searchKey=event.target.value
+        window.clearTimeout(this.timer)
+        this.searchKey=event.target.value  
+        timer=setTimeout(()=>{
+            this.callApex()
+        }, 2000)
+    }
+    callApex(){
         findAccounts({searchKey:this.searchKey})
         .then((result)=>{
             this.accounts=result
